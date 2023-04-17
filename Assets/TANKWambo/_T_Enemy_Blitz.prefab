@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2506041060448848750}
   - component: {fileID: 2506041060448848751}
   m_Layer: 0
-  m_Name: Blitz
+  m_Name: _T_Enemy_Blitz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayerID: 1663161947
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 51fdb4513a75767439e3ac5658753603, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -123,7 +123,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 2506041060448848741}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 3e87d5748abb4e14fb9b89ae9282b977, type: 2}
+  m_Material: {fileID: 6200000, guid: 00f859259108d5546b59d114846f3571, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -148,6 +148,7 @@ MonoBehaviour:
   hypertags:
   - {fileID: 11400000, guid: 037282bf9c2be624db5e4dcee420102a, type: 2}
   - {fileID: 11400000, guid: 419bb0c4c960c1843b8184c6d8c41fa7, type: 2}
+  - {fileID: 11400000, guid: 33f816b28ddf6db49a4f44b8f4954b26, type: 2}
 --- !u!114 &2506041060448848742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,13 +239,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: 'Follows the [Blitz] path, at 10 units per second.
+  _explanation: 'Follows the [_T_Enemy_Blitz] path, at 10 units per second.
+
+    The
+    object will loop back to the beginning at the end of the path.
 
     The object
-    will loop back to the beginning at the end of the path.
-
-    The object will
-    align it''s X axis to the path direction.
+    will align it''s X axis to the path direction.
 
 '
   description: 
@@ -280,7 +281,7 @@ MonoBehaviour:
   - {x: 13.822835, y: 4.6391478, z: 0}
   - {x: 13.917512, y: -8.287813, z: 0}
   - {x: 8.047542, y: -8.27396, z: 0}
-  - {x: 8.142219, y: -1.9779425, z: 0}
+  - {x: 8.055924, y: -1.9491779, z: 0}
   worldSpace: 1
   editMode: 1
 --- !u!1 &2506041060528881164
@@ -360,8 +361,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayerID: 1663161947
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 781d86bb4505f314d9e583182755e481, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -472,6 +473,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 0}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -538,7 +540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "When ((Body.x >= -1):\n          enables component Shoot (TriggerOnTimer)
+  _explanation: "When ((Shoot.x >= -1):\n          enables component Shoot (OkapiKit.TriggerOnTimer)
     on Shoot\n"
   description: 
   enableTrigger: 1
@@ -558,6 +560,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 0}
+    movementPlatformer: {fileID: 0}
     comparison: 4
     value: -1
     percentageCompare: 0
