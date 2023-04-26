@@ -998,6 +998,7 @@ MonoBehaviour:
   hypertags:
   - {fileID: 11400000, guid: 037282bf9c2be624db5e4dcee420102a, type: 2}
   - {fileID: 11400000, guid: 419bb0c4c960c1843b8184c6d8c41fa7, type: 2}
+  - {fileID: 11400000, guid: 0aae75a34dd81134d8e47ff9d644cd5d, type: 2}
 --- !u!114 &6593632204288776048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1048,7 +1049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "When a collision with a bounding volume with tags [Bullet,Explosion]
+  _explanation: "When a collision with a bounding volume with tags [Bullet,Explosion,BeamerBullet]
     starts:\n          destroys this object\n          plays sound explosion_sound
     at volume 1 and at pitch 1\n"
   description: 
@@ -1066,6 +1067,7 @@ MonoBehaviour:
   tags:
   - {fileID: 11400000, guid: 5dd3ea1295091a146a4601c96116d46b, type: 2}
   - {fileID: 11400000, guid: 7b6614cbd7549a4409447c67edf9f5f0, type: 2}
+  - {fileID: 11400000, guid: 7822eb03f1d1f1646bcd9a66191a1259, type: 2}
 --- !u!114 &6593632204288776050
 MonoBehaviour:
   m_ObjectHideFlags: 0

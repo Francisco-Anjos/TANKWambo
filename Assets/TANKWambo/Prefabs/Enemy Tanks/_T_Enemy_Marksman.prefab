@@ -186,6 +186,7 @@ MonoBehaviour:
   hypertags:
   - {fileID: 11400000, guid: 037282bf9c2be624db5e4dcee420102a, type: 2}
   - {fileID: 11400000, guid: b8521af64a2d2494684c553b8809ace9, type: 2}
+  - {fileID: 11400000, guid: 0aae75a34dd81134d8e47ff9d644cd5d, type: 2}
 --- !u!114 &3893577774969003043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,7 +456,7 @@ MonoBehaviour:
   _explanation: "When ((ProbeIntersect(_T_Enemy_Marksman,[Marksman Waypoint]):\n         
     toggles component _T_Enemy_Marksman (TriggerOnCondition) on _T_Enemy_Marksman\n         
     find actions underneath this object tagged with any of [Marksman Shoot] and execute
-    all of them.\n then, at 0.1 seconds, \n          toggles component _T_Enemy_Marksman
+    all of them.\n then, at 0,1 seconds, \n          toggles component _T_Enemy_Marksman
     (MovementPath) on _T_Enemy_Marksman\n"
   description: 
   enableTrigger: 1
@@ -805,11 +806,6 @@ MonoBehaviour:
   description: 
   type: 0
   tension: 1
-  points:
-  - {x: 15, y: 0, z: 0}
-  - {x: 0, y: 9, z: 0}
-  - {x: -15, y: 0, z: 0}
-  - {x: 0, y: -9, z: 0}
-  - {x: 15, y: 0, z: 0}
+  points: []
   worldSpace: 1
   editMode: 0
